@@ -1,0 +1,25 @@
+Source: duckdb-httpfs-test
+Section: misc
+Priority: extra
+Maintainer: Frantisek Boranek <fboranek@gmail.com>
+Homepage: https://gitlab.seznam.net/fboranek/main/tree/master/duckdb-httpfs-test
+Build-Depends:
+ build-essential,
+ cmake (>= 3.12),
+ debhelper (>= 13),
+ debhelper-compat (= 13),
+ duckdb,
+ libboost-program-options-dev,
+ libduckdb-dev (= 2.0.0+dfsg2-1),
+Standards-Version: 3.9.4
+
+Package: duckdb-app
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+# hold needed extension /usr/lib/duckdb/extensions/v2.0.0/linux_amd64/httpfs.duckdb_extension
+ duckdb,
+Description: DuckDB test application with S3/httpfs extension
+ A test application demonstrating DuckDB usage with the httpfs extension
+ to query Parquet files from S3 storage.

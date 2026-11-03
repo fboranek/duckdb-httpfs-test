@@ -1,0 +1,5 @@
+duckdb-httpfs-test (1.0.0) unstable; urgency=medium
+
+  * Initial release - DuckDB test application with S3/httpfs extension support
+
+ -- Frantisek Boranek <fboranek@gmail.com>  Tue, 03 Nov 2026 12:23:40 +0100

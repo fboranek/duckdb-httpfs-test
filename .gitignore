@@ -1,0 +1,13 @@
+.DS_Store
+.cache
+.env
+.env.local
+*.debhelper
+*.substvars
+build
+debhelper-build-stamp
+debian/files
+debian/duckdb-app
+debian/tmp
+obj-x86_64-linux-gnu
+build.log
